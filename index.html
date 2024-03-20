@@ -12,7 +12,7 @@
     />
 <style>
   header,
-section {
+body {
   background-color: rgb(117, 38, 52);
 }
 
@@ -32,14 +32,11 @@ h2 {
 
 
 
-@media (min-width: 640px) and (max-width: 1023px) {
+@media (min-width: 500px) and (max-width: 1023px) {
   #ClassRow {
     display: none;
   }
-  #tablet-view{
-    display: none;
-  }
-  #PortabelAbout{
+  #about{
     display: none;
   }
 }
@@ -47,10 +44,20 @@ h2 {
   #tablet-view{
     display: none;
   }
+
+  #PortabelAbout{
+    display: none;
+  }
 }
 
 @media (max-width: 639px){
+  #about{
+    display: none;
+  }
 
+  #ClassRow{
+    display: none;
+  }
   
   }
 
@@ -103,7 +110,7 @@ h2 {
       <section id="about">
         <h2  class="text-white">Sobre</h2>
         <div id="aboutLarge" class="row justify-content-center">
-            <div class="col-5">
+            <div class="col-4">
                 <img class="rounded" src="https://via.placeholder.com/500x300" alt="">
             </div>
             <div class="col-5">
@@ -115,9 +122,9 @@ h2 {
         <h2  class="text-white">Sobre</h2>
 
         <div class="container">
-          <div class="row mr-auto ml-auto justify-content-center">
+          <div class="row  justify-content-center">
             <div class="col-12">
-            <img class="rounded w-100 mr-auto ml-auto justify-content-center " src="https://via.placeholder.com/500x300" alt="">
+            <img class="rounded w-100 mr-auto ml-auto justify-content-center " src="https://via.placeholder.com/400x200" alt="">
           </div>
           <div class="row">
             <h4 class="text-align-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit laborum porro officiis vitae tenetur labore voluptas nam maiores mollitia ipsam unde illo, facere expedita commodi, nisi, assumenda corporis quod repudiandae.Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque illum cupiditate fuga beatae porro nesciunt distinctio laborum repellat sed quo perferendis, consectetur placeat quisquam at veritatis, omnis itaque numquam rerum.</h4>
@@ -197,8 +204,8 @@ h2 {
         <section id="tablet-view">
             <div class="container">
               <h2 class="text-white">Cardápio</h2>
-              <div id="ClassRowTablet" class="row mr-auto ml-auto justify-content-center mb-5">
-                  <div class="col-md-6 justify-content-center">
+              <div id="ClassRowTablet" class="row mr-auto ml-auto justify-content-center">
+                  <div class="col-md-6 justify-content-center mb-5">
                     <div class="card">
                       <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -208,7 +215,7 @@ h2 {
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6 justify-content-center">
+                  <div class="col-md-6 justify-content-center mb-5">
                     <div class="card ">
                       <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -224,8 +231,8 @@ h2 {
 
 
 
-                  <div id="ClassRowTablet" class="row mr-auto ml-auto justify-content-center mb-5">
-                    <div class="col-md-6 justify-content-center">
+                  <div id="ClassRowTablet" class="row mr-auto ml-auto justify-content-center">
+                    <div class="col-md-6 justify-content-center mb-5">
                       <div class="card">
                         <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -235,7 +242,7 @@ h2 {
                         </div>
                       </div>  
                     </div>
-                    <div class="col-md-6 justify-content-center">
+                    <div class="col-md-6 justify-content-center mb-5">
                       <div class="card">
                         <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -249,8 +256,8 @@ h2 {
 
 
 
-                  <div id="ClassRowTablet" class="row mr-auto ml-auto justify-content-center mb-5">
-                    <div class="col-md-6 justify-content-center">
+                  <div id="ClassRowTablet" class="row mr-auto ml-auto justify-content-center">
+                    <div class="col-md-6 justify-content-center mb-5">
                       <div class="card">
                         <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -260,7 +267,7 @@ h2 {
                         </div>
                       </div>  
                     </div>
-                    <div class="col-md-6 justify-content-center">
+                    <div class="col-md-6 justify-content-center mb-5">
                       <div class="card">
                         <img src="https://via.placeholder.com/200x200" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -275,6 +282,7 @@ h2 {
         </section>
         <section class="form-contato">
           <div class="container">
+            <h2 class="text-white">Fale conosco</h2>
             <div class="row">
               <div class="col-lg-4">
                 <form>
